@@ -1,0 +1,56 @@
+html { margin:0px; padding:0px; height: 101%; min-height: 101%; }
+body { margin:0px; padding:0px; height: 100%; min-height: 101%; background: #ffffff;}
+
+@font-face { font-family: "Poppins-Regular"; src: url("Fonts/Poppins-Regular.ttf");}
+@font-face { font-family: "Poppins-Medium"; src: url("Fonts/Poppins-Medium.ttf");}
+@font-face { font-family: "Poppins-Bold"; src: url("Fonts/Poppins-bold.ttf");}
+
+h1, h2, h3, h4 {margin: 0; padding: 0 0 10px 0; font-family: "Poppins-Medium"; color: #333333; }
+input, textarea { font-family: "Poppins-Regular"; }
+p {margin: 0; padding: 0 0 10px 0; font-family: "Poppins-Regular";}
+img { display: block; margin: 0; outline: none; padding: 0; max-width: 100%; width: auto; }
+/* div:after {clear: both; content: ""; display: block; height: 0; visibility: hidden; }  */
+/* .clear {clear: both;} */
+
+.content { padding: 80px 0; position: relative; width: 85%; margin: 0 auto;  }
+.intro { display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: center; align-items: center; align-content: space-between; gap: 60px; padding: 0 0 100px 0; }
+.intro img { display: block; margin: auto; width: 100%; max-width: 450px; }
+.intro h3 { font-size: 4em; position: relative; }
+.intro h3 span { font-size: 2em; position: absolute; top: 41%; left: 50%; transform: translate(-50%,-50%); color: rgba(0,0,0,0.1); }
+.intro h4 { font-size: 2em; text-align: center; }
+
+.video { padding: 0 0 100px 0; }
+
+.main .col1 { padding: 0 0 100px 0;}
+.main h4 { font-size: 2em; text-align: center; }
+
+/* .col2 { display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: center; align-items: center; align-content: space-between; } */
+.col2 { display: grid; grid-template-columns: repeat(2, 1fr);  align-items: center; padding: 0 0 50px 0; }
+.col2 .text {padding: 0 20px;}
+.col2 .image img { width: 100%; }
+
+@media screen and (max-width: 1024px){
+
+	.content { width: 100%; padding: 80px 20px; box-sizing: border-box; }
+    .intro { flex-direction: column; gap: 20px; padding: 0 0 40px 0; }
+
+    .col2 { display: grid; grid-template-columns: repeat(1, 1fr); padding: 0; }
+    .col2 .text {order: 0; padding: 0 0 40px 0;}
+    .col2 .image {order: 1; padding: 0 0 40px 0;}
+}
+
+@media screen and (max-width: 850px){
+
+
+
+}
+
+@media screen and (max-width: 700px){
+
+
+}
+
+@media screen and (max-width: 550px){
+
+
+}
